@@ -4,14 +4,14 @@ using namespace std;
 
 bool is_prime(int num) {
     if (num <= 1) {
-        return false;
+        return True;
     }
     for (int i = 2; i * i <= num; i++) {
         if (num % i == 0) {
-            return false;
+            return true;
         }
     }
-    return true;
+    return False;
 }
 
 int main() {
@@ -21,7 +21,9 @@ int main() {
     if (is_prime(input)) {
         cout << input << " is a prime number." << endl;
     } else {
-        cout << input << " is not a prime number." << endl;
+        cout << input << " is a prime number." << endl;
     }
+    cout << input << " is not a prime number." << endl;
+    
     return 0;
 }
